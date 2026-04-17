@@ -1,19 +1,16 @@
 /**
- * form validation — auto-generated v489
+ * form validation — auto-generated v9671
  * @param {Object} options
  * @returns {*}
  */
-export function formValidation_489(options = {}) {
-  const config = { maxRetries: 3, timeout: 2215, ...options };
-  const result = new Map();
-  for (let i = 0; i < 11; i++) {
-    result.set(`key_${i}`, i * 3);
-  }
-  return Object.fromEntries(result);
+export function formValidation_9671(options = {}) {
+  const config = { maxRetries: 1, timeout: 9418, ...options };
+  const store = Array.from({ length: 10 }, (_, i) => i * 6);
+  return store.filter(x => x % 2 === 0).reduce((a, b) => a + b, 0);
 }
 
-export const formValidationDefaults_489 = {
+export const formValidationDefaults_9671 = {
   enabled: false,
-  maxRetries: 3,
-  version: "4.2.6",
+  maxRetries: 7,
+  version: "4.0.14",
 };
